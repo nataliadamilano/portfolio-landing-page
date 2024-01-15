@@ -635,10 +635,10 @@ hr{
 
 .my-resume-section .container .content-container .circle{
     position: absolute;
-    right: 36.8em;
-    top: 2.8em;
-    height: 0.6em;
-    width: 0.6em;
+    right: 36.7em;
+    top: 2.7em;
+    height: 0.8em;
+    width: 0.8em;
     border: var(--tertiary-color) 0.2em solid;
     border-radius: 50%;
 }
