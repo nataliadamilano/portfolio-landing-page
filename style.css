@@ -193,9 +193,8 @@ main .about-me .contact-skills .skills{
     margin-left: -20em;
 }
 
-main .about-me .contact-skills .skills .icons .icon-container img{
-    max-width: 40%;
-    max-height: 40%;
+main .about-me .contact-skills .skills .icons a .icon-container{
+    background-size: 40% 40%;
 }
 
 .icons{
@@ -207,7 +206,10 @@ main .about-me .contact-skills .skills .icons .icon-container img{
     gap: 2em;
 }
 
-.icons .icon-container{
+.icons a .icon-container{
+    background-repeat:no-repeat;
+    background-size: 30% 30%;
+    background-position:center;
     width: 4em;
     height: 4em;
     box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
@@ -218,9 +220,28 @@ main .about-me .contact-skills .skills .icons .icon-container img{
     align-items: center;
 }
 
-.icons .icon-container img{
-    max-width: 30%;
-    max-height: 30%; 
+.icons a .icon-container.facebook{
+    background-image:url('/images/facebook.png');
+}
+
+.icons a .icon-container.instagram{
+    background-image:url('/images/instagram.png');
+}
+
+.icons a .icon-container.linkedin{
+    background-image:url('/images/linkedin.png');
+}
+
+.icons a .icon-container.invision{
+    background-image:url('/images/invision.png');
+}
+
+.icons a .icon-container.sketch{
+    background-image:url('/images/sketch.svg');
+}
+
+.icons a .icon-container.figma{
+    background-image:url('/images/figma.png');
 }
 
 hr{
@@ -362,7 +383,7 @@ hr{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 22em;
+    height: 24em;
     width: 18em;
     background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
     box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
@@ -371,16 +392,19 @@ hr{
     padding: 1.2em;
 }
 
-.portfolio-section .content-portfolio .content .picture{
+.portfolio-section .content-portfolio .content a{
+    background: transparent;
+}
+.portfolio-section .content-portfolio .content a .picture{
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
-    width: 95%;
-    height: 12em;
+    /* width: 95%;
+    height: 12em; */
     padding: 0.3em 0 0.8em;
     background: transparent;
 }
 
-.portfolio-section .content-portfolio .content .picture img{
+.portfolio-section .content-portfolio .content a .picture img{
     border-top-left-radius: 0.6em;
     border-top-right-radius: 0.6em;
     height: 100%;
@@ -922,10 +946,11 @@ hr{
     background: transparent;
 }
 
-.contact-w-me-section .contact-container .contact-info .social-media .icons .icon-container{
+.contact-w-me-section .contact-container .contact-info .social-media .icons a .icon-container{
     width: 3em;
     height: 3em;
 }
+
 
 .contact-w-me-section .contact-container .contact-me{
     display: grid;
@@ -1036,9 +1061,10 @@ footer h3{
 
 /* Responsive Styles */
 
+
 @media screen and (max-width: 1910px){
     .portfolio-section .content-portfolio .content{
-        height: 25em;
+        height: 27.5em;
         width: 23em;
     }
 }
@@ -1051,7 +1077,7 @@ footer h3{
         width: 80em;
     }  
     .portfolio-section .content-portfolio .content{
-        height: 25em;
+        height: 27.5em;
         width: 23em;
     }
     .portfolio-section .content-portfolio .content .title{
