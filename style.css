@@ -1,0 +1,1107 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #ECF0F3;
+    box-sizing: border-box;
+}
+
+body { 
+        min-height: 100vh;
+        min-width: fit-content;
+    }
+
+
+:root{
+    --primary-color: #000000;
+    --secondary-color: #f72a67;
+    --tertiary-color: #717376;
+    --hr-color: #dde0e6;
+}
+
+h1{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 3.2em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* Navbar Styles  */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+nav{
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+nav .logo-container{
+    margin-left: 13em;
+}
+
+nav .logo-container a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+nav ul{
+    display: flex;
+    padding: 0 2em 0;
+    list-style: none;
+    align-items: center;
+    gap: 3em;
+}
+
+nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.btn-buy-now{
+    padding: 0.9em 1.4em 0.9em;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+        10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 5%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-buy-now a{
+    padding: 1em;
+    color: var(--secondary-color);
+}
+
+/* Main Styles */
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 2em 0; */
+    padding: 0 10em 0;
+    gap: 5em;
+}
+
+main .about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 8em;
+}
+
+main .about-me .text-about{
+    display: flex;
+    flex-direction: column;
+    width: 45em;
+}
+
+main .about-me .text-about h2{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    color: var(--tertiary-color);
+}
+
+main .about-me .text-about .intro-name{
+    font-size: 3.8em;
+    color: var(--primary-color);
+    margin-bottom: -0.4em;
+}
+
+main .about-me .text-about h1 span{
+    color: var(--secondary-color);
+}
+
+main .about-me .text-about p{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    padding-top: 1em;
+    margin-right: 10em;
+}
+
+main .profile-picture{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6em;
+}
+
+main .profile-picture img{
+    max-width: 500px;
+    height: auto;
+    display: block;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.6em;
+}
+
+main .about-me .contact-skills{
+    display: flex;
+    justify-content: center;
+    gap: 20em;
+    width: 50em;
+    height: 10em;
+    padding-top: 10em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.8em;
+}
+
+main .about-me .contact-skills h3{
+    margin-bottom: 1.5em;
+}
+
+main .about-me .contact-skills .contact-me{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+main .about-me .contact-skills .skills{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: -20em;
+}
+
+main .about-me .contact-skills .skills .icons .icon-container img{
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    gap: 2em;
+}
+
+.icons .icon-container{
+    width: 4em;
+    height: 4em;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons .icon-container img{
+    max-width: 30%;
+    max-height: 30%; 
+}
+
+hr{
+    margin: auto;
+    width: 82em;
+    height: 0.1em;
+    background-color: var(--hr-color);
+    border: none;
+}
+
+/* Features Section Styles */
+
+.features-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 10em 3em;
+    width: 100%;
+}
+
+.features-section .features-title{
+    display: grid;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 100%;
+    padding: 2em;
+    margin-left: 15.5em;
+}
+
+.features-section .features-title h1{
+    font-size: 3.4em;
+    margin-top: -0.3em;
+    background: transparent;
+}
+
+.features-section .features-title h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    background: transparent;
+    /* margin-bottom: -1em; */
+}
+
+.features-section .features-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90em;
+    height: auto;
+    gap: 3em;
+    padding-bottom: 3em;
+}
+
+.features-section .features-container .feature{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 23em;
+    height: 19em;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
+    border-radius: 0.4em;
+    padding: 3em 2.5em 3em;
+}
+
+.features-section .features-container .feature i{
+    color: #fe4d4d;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.features-section .features-container .feature h2{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.features-section .features-container .feature p{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: var(--tertiary-color);
+    background: transparent;
+    margin-top: 0.5em;
+}
+/* My Portfolio Styles */
+
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 2em 0; */
+    padding: 3em 10em 6em;
+}
+
+.portfolio-section .portfolio-title{
+    padding-top: 2em;
+}
+
+.portfolio-section .portfolio-title h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.portfolio-section .portfolio-title h1{
+    font-size: 3.4em;
+    text-align: center;
+}
+
+.portfolio-section .content-portfolio{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 90em;
+    height: auto;
+    gap: 3em;
+    padding-top: 2em;
+}
+
+.portfolio-section .content-portfolio .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 22em;
+    width: 18em;
+    background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 1em;
+    padding: 1.2em;
+}
+
+.portfolio-section .content-portfolio .content .picture{
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    width: 95%;
+    height: 12em;
+    padding: 0.3em 0 0.8em;
+    background: transparent;
+}
+
+.portfolio-section .content-portfolio .content .picture img{
+    border-top-left-radius: 0.6em;
+    border-top-right-radius: 0.6em;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.portfolio-section .content-portfolio .content .detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    background: transparent;
+}
+
+.portfolio-section .content-portfolio .content .detail h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+    padding: 1em 0 1em;
+}
+
+.portfolio-section .content-portfolio .content .detail p{
+    color: var(--tertiary-color);
+    font-weight: bold;
+    background: transparent;
+    font-size: 0.8em;
+}
+
+.portfolio-section .content-portfolio .content .title{
+    width: 95%;
+    height: 5em;
+    background: transparent;
+    padding: 0.5em 0 3em;
+}
+
+.portfolio-section .content-portfolio .content .title h1{
+    font-size: 1.5em;
+    text-align: start;
+    background: transparent;
+}
+
+/* My Resume Styles */
+
+.my-resume-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 2em 0; */
+    padding: 0 10em 0;
+}
+
+.my-resume-section .my-resume-title{
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.my-resume-section .my-resume-title h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.my-resume-section .my-resume-title h1{
+    font-size: 3.4em;
+    text-align: center;
+}
+
+.my-resume-section .resume-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 76.5em; 
+    margin-bottom: 1em;
+    background: linear-gradient(90deg, rgba(236,240,243,1) 0%, rgba(255,255,255,1) 100%);
+    border-radius: 0.6em;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.my-resume-section .resume-opt ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0.6em;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    list-style: none;
+    background: linear-gradient(85deg, rgba(236,240,243,1) 45%, rgba(255,255,255,1) 100%);
+}
+
+.my-resume-section .resume-opt ul li{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+
+.my-resume-section .resume-opt ul .btn-active{
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0.6em;
+    background: linear-gradient(85deg, rgba(236,240,243,1) 45%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+}
+
+.my-resume-section .resume-opt ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: bolder;
+    text-align: center;
+    background: transparent;
+}
+
+.my-resume-section .resume-opt ul li .link-active{
+    color: var(--secondary-color);
+}
+
+.my-resume-section .container{
+    display: flex;
+    justify-content: space-between;
+    width: 74.5em;
+    max-width: 100%;
+    height: 100%;
+    margin-right: 1em;
+    padding: 0 0 3em;
+    gap: 1.5em;
+}
+
+.my-resume-section .container p{
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    font-weight: bolder;
+}
+
+.my-resume-section .container h2{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+    color: var(--primary-color);
+    padding-bottom: 0.5em;
+}
+
+.my-resume-section .container .content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+}
+
+.my-resume-section .container .content-container .content{
+    width: 35em;
+    height: 16em;
+    background: linear-gradient(85deg, rgba(236,240,243,1) 45%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.4em;
+}
+
+.my-resume-section .container .content-container .content .title{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: transparent;
+    padding: 2em 2em 1em 2em;
+}
+
+.my-resume-section .container .content-container .content .title h3{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.my-resume-section .container .content-container .content .title p{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 0.8em;
+    font-weight: 200;
+    color: var(--primary-color);
+    background: transparent;
+}
+
+.my-resume-section .container .content-container .content .title span{
+    position: absolute;
+    left: 33em;
+    top: 4em;
+    padding: 0.3em 0.5em 0.3em;
+    background-color: white;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.4em;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    font-size: 0.9em;
+}
+
+.my-resume-section .container .content-container .content hr{
+    width: 33em;
+}
+
+.my-resume-section .container .content-container .content .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2em 2em 1em 2em;
+    background: transparent;
+    text-align: start;
+}
+
+.my-resume-section .container .content-container .content .detail p{
+    color: var(--primary-color);
+    font-weight: lighter;
+    background: transparent;
+}
+.my-resume-section .container .content-container .vertical-stick{
+    height: 18.5em;
+    width: 0.2em;
+    background-color: var(--tertiary-color);
+    margin-right: 2em;
+}
+
+.my-resume-section .container .content-container .circle{
+    position: absolute;
+    right: 36.6em;
+    top: 2.6em;
+    /* margin-left: -37em;
+    margin-top: 2em; */
+    height: 0.6em;
+    width: 0.6em;
+    border: var(--tertiary-color) 0.2em solid;
+    border-radius: 50%;
+}
+
+.my-resume-section .container .content-container .horizontal-stick{
+    position: absolute;
+    right: 33em;
+    top: 3em;
+    height: 0.2em;
+    width: 1.7em;
+    background-color: var(--tertiary-color);
+    margin-right: 2em;
+}
+
+.my-resume-section .container .content-container .vertical-stick-end{
+    height: 16em;
+    width: 0.2em;
+    background-color: var(--tertiary-color);
+    margin-right: 2em;
+}
+
+/* My Blog Styles */
+
+.my-blog-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10em 0;
+}
+
+.my-blog-section .my-blog-title{
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.my-blog-section .my-blog-title h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.my-blog-section .my-blog-title h1{
+    font-size: 3.4em;
+    text-align: center;
+}
+
+.my-blog-section .blog-article-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 3em;
+}
+
+.my-blog-section .blog-article-container .article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 25em;
+    width: 23em;
+    background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 1em;
+    padding: 1.2em;
+}
+
+.my-blog-section .blog-article-container .article .picture{
+    position: absolute;
+    bottom: 10.2em;
+    border-radius: 0.6em;
+    width: 85%;
+    height: 13em;
+}
+
+.my-blog-section .blog-article-container .article .picture img{
+    border-radius: 0.6em;
+    height: 100%;
+    max-width: 100%;
+}
+
+.my-blog-section .blog-article-container .article .detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 12.5em;
+    width: 85%;
+    background: transparent;
+}
+
+.my-blog-section .blog-article-container .article .detail h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.6em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+    padding: 1em 0 1em;
+}
+
+.my-blog-section .blog-article-container .article .detail p{
+    color: var(--primary-color);
+    font-weight: bold;
+    background: transparent;
+    font-size: 0.8em;
+}
+
+.my-blog-section .blog-article-container .article .title{
+    position: absolute;
+    top: 13.5em;
+    width: 85%;
+    height: 5em;
+    padding: 1em;
+    background: transparent;
+}
+
+.my-blog-section .blog-article-container .article .title h1{
+    font-size: 1.3em;
+    text-align: start;
+    background: transparent;
+}
+
+/* Contact With Me Styles */
+
+.contact-w-me-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10em 0;
+}
+
+.contact-w-me-section .contact-w-me-title{
+    padding-top: 5em;
+    padding-bottom: 2em;
+}
+
+.contact-w-me-section .contact-w-me-title h2{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    letter-spacing: 0.2em;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: -1em;
+}
+
+.contact-w-me-section .contact-w-me-title h1{
+    font-size: 3.4em;
+    text-align: center;
+}
+
+.contact-w-me-section .contact-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    padding-bottom: 6em;
+}
+
+.contact-w-me-section .contact-container .contact-info{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 42em;
+    width: 30em;
+    background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.6em;
+    padding: 1.2em 1.2em 0.5em;
+}
+
+.contact-w-me-section .contact-container .contact-info .picture{
+    border-radius: 0.6em;
+    width: 95%;
+    height: 15em;
+    justify-self: center;
+    align-self: flex-start;
+    margin-top: 0.5em;
+}
+
+.contact-w-me-section .contact-container .contact-info .picture img{
+    border-radius: 0.6em;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    align-self: self-start;
+    margin-left: 0.5em;
+    margin-top: 0.8em;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-info h1{
+    font-size: 1.8em;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-info h2{
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    align-self: self-start;
+    margin-left: 0.5em;
+    margin-top: -0.4em;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-detail p{
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: lighter;
+    background: transparent;
+    margin-top: 1.5em;
+}    
+
+.contact-w-me-section .contact-container .contact-info .profile-detail .contact{
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin-top: 0.8em;
+    gap: 0.2em;
+}
+
+.contact-w-me-section .contact-container .contact-info .profile-detail .contact p{
+    margin-top: 0;
+}
+
+.contact-w-me-section .contact-container .contact-info .social-media{
+    margin-left: 0.5em;
+    background: transparent;
+}
+.contact-w-me-section .contact-container .contact-info .social-media h3{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.8em;
+    background: transparent;
+    margin-bottom: 1.5em;
+}
+
+.contact-w-me-section .contact-container .contact-info .social-media .icons{
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-info .social-media .icons .icon-container{
+    width: 3em;
+    height: 3em;
+}
+
+.contact-w-me-section .contact-container .contact-me{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 42em;
+    width: 42em;
+    background: linear-gradient(110deg, rgba(236,240,243,1) 40%, rgba(255,255,255,1) 100%);
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 0.6em;
+    padding: 1.2em;
+}
+
+.contact-w-me-section .contact-container .contact-me .name-phone-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1.5em;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-me .name-phone-container .name-container, .phone-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: self-start;
+    background: transparent;
+    gap: 1em;
+    width: 18.5em;
+}
+
+.contact-w-me-section .contact-container .contact-me label{
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.7em;
+    font-weight: bold;
+    background: transparent;
+}
+
+.contact-w-me-section .contact-container .contact-me input, textarea{
+    height: 3em;
+    border: #a7acb3 0.1em solid;
+    border-radius: 0.4em;
+    background: white;
+    height: 3.5em;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 2em;
+}
+
+.contact-w-me-section .contact-container .contact-me textarea{
+    height: 14em;
+}
+
+.contact-w-me-section .contact-container .contact-me button{
+    height: 4em;
+    border: none;
+    border-radius: 0.4em;
+    background: var(--secondary-color);
+    margin-top: -2em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 0.7em;
+    color: white;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(70,70,70,0.12);
+}
+
+/* Footer Styles */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0 8em;
+}
+
+footer img{
+    width: 4em;
+    height: 4em;
+    border: white 0.1em solid;
+    border-radius: 2em;
+    box-shadow: -5px -5px 7.5px rgba(255,255,255,0.5),
+    5px 5px 7.5px rgba(70,70,70,0.12);
+    background: transparent;
+}
+
+footer h2{
+    font-family: 'Palanquin', sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--primary-color);
+    letter-spacing: 0.1em;
+}
+
+footer h3{
+    color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    background: transparent;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 1910px){
+    .portfolio-section .content-portfolio .content{
+        height: 25em;
+        width: 23em;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    .features-section .features-title{
+        margin-left: 12em;
+    }
+    .portfolio-section .content-portfolio{
+        width: 80em;
+    }  
+    .portfolio-section .content-portfolio .content{
+        height: 25em;
+        width: 23em;
+    }
+    .portfolio-section .content-portfolio .content .title{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media screen and (min-width: 1950px){
+    .features-section .features-title{
+        margin-left: 20em;
+    }
+}
+@media screen and (min-width: 2100px){
+    .features-section .features-title{
+        margin-left: 24em;
+    }
+}
+@media screen and (min-width: 2300px){
+    .features-section .features-title{
+        margin-left: 40em;
+    }
+}
+@media screen and (min-width: 2800px){
+    .features-section .features-title{
+        margin-left: 70em;
+    }
+    .portfolio-section .content-portfolio{
+        width: 90em;
+        gap: 10.5em;
+    }
+    .my-blog-section .blog-article-container{
+        padding-top: 2em;
+        gap: 10.5em;
+    }
+    .contact-w-me-section .contact-container{
+        gap: 7.5em;
+    }
+}
+
+/* @media screen and (min-width: 1921px){
+    .features-section .features-title{
+        margin-left: 8em;
+    }
+}
+
+@media screen and (min-width: 2078){
+    .features-section .features-title{
+        margin-left: 12em;
+    }
+} */
