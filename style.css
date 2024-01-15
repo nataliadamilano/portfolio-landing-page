@@ -635,10 +635,8 @@ hr{
 
 .my-resume-section .container .content-container .circle{
     position: absolute;
-    right: 36.6em;
-    top: 2.6em;
-    /* margin-left: -37em;
-    margin-top: 2em; */
+    right: 36.8em;
+    top: 2.8em;
     height: 0.6em;
     width: 0.6em;
     border: var(--tertiary-color) 0.2em solid;
@@ -647,7 +645,7 @@ hr{
 
 .my-resume-section .container .content-container .horizontal-stick{
     position: absolute;
-    right: 33em;
+    right: 33.1em;
     top: 3em;
     height: 0.2em;
     width: 1.7em;
