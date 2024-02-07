@@ -9,10 +9,10 @@
 </head>
 <body>
     <header>
+        <div class="logo-container">
+            <a href="#">Logo</a>
+        </div>
         <nav>
-            <div class="logo-container">
-                <a href="#">Logo</a>
-            </div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Features</a></li>
@@ -70,7 +70,7 @@
             </div>
         </div>
         <div class="profile-picture">
-            <img src="/images/profile-picture.jpg" alt="">
+            <img src="/images/profile-picture.jpg" id="profile-picture" alt="">
         </div>
     </main>
     <hr>
@@ -82,36 +82,38 @@
             <h1>What I Do</h1>
         </div>
         <div class="features-container">
-            <div class="feature">
+            <article class="feature">
                 <i class="fa-solid fa-bars"></i>
                 <h2>Business Stratagy</h2>
                 <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-            </div>
-            <div class="feature">
+            </article>
+            <article class="feature">
                 <i class="fa-solid fa-book"></i>
                 <h2>App Development</h2>
                 <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence.</p>
-            </div>
-            <div class="feature">
+            </article>
+            <article class="feature">
                 <i class="fa-solid fa-tv"></i>
                 <h2>App Development</h2>
                 <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-            </div>
-            <div class="feature">
+            </article>
+            <article class="feature">
                 <i class="fa-solid fa-comment-dots"></i>
                 <h2>Mobile App</h2>
                 <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-            </div>
-            <div class="feature">
+            </article>
+            <article class="feature">
                 <i class="fa-solid fa-wifi"></i>
                 <h2>CEO Marketing</h2>
                 <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-            </div>
-            <div class="feature">
+            </article>
+            <article class="feature">
                 <i class="fa-solid fa-splotch"></i>
                 <h2>Personal Portfolio April</h2>
                 <p>I throw myself down among the tall grass by the stream as I lie close to the earth.</p>
-            </div>
+            </article>
+            <div class="btn-prev" id="btn-prev" onclick="cardsSlider(-1)"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="btn-next" id="btn-next" onclick="cardsSlider(1)"><i class="fa-solid fa-chevron-right"></i></div>
         </div>
     </section>
     <hr>
@@ -136,6 +138,17 @@
                 <div class="title">
                     <h1>The services provide for design</h1>
                 </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <a href="">
@@ -149,6 +162,17 @@
                 </div>
                 <div class="title">
                     <h1>Mobile app landing design & app maintain</h1>
+                </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
                 </div>
             </div>
             <div class="content">
@@ -164,6 +188,17 @@
                 <div class="title">
                     <h1>Logo design creativity & Application</h1>
                 </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <a href="">
@@ -177,6 +212,17 @@
                 </div>
                 <div class="title">
                     <h1>Mobile app landing design & app maintain</h1>
+                </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
                 </div>
             </div>
             <div class="content">
@@ -192,6 +238,17 @@
                 <div class="title">
                     <h1>Design for technology & services</h1>
                 </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
+                </div>
             </div>
             <div class="content">
                 <a href="">
@@ -205,6 +262,17 @@
                 </div>
                 <div class="title">
                     <h1>App for technology & services</h1>
+                </div>
+                <button class="btn-more"><a href="#">Saber más</a></button>
+                <div class="content-more">
+                    <div class="exit-btn">
+                        <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+                    </div>
+                    <div class="github-rep">
+                        <a href="https://github.com/nataliadamilano/portfolio-landing-page" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <h2>My GitHub Repository</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel incidunt eum libero cumque aliquam rerum quibusdam, esse.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -418,7 +486,7 @@
                     </div>
                 </div>
             </div>
-            <form action="" class="contact-me">
+            <form action="" class="contact-me" id="contact-me">
                 <div class="name-phone-container">
                     <div class="name-container">
                         <label for="">Your Name</label>
@@ -435,7 +503,7 @@
                 <input type="text">
                 <label for="">Your Message</label>
                 <textarea name="" id="" cols="30" rows="10"></textarea>
-                <button>Send Message</button>
+                <button id="btn-send">Send Message</button>
             </form>
         </div>
     </section>
@@ -445,5 +513,6 @@
         <h2>INBIO</h2>
         <h3>Rainbow-Themes.</h3>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
